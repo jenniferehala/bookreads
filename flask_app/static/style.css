@@ -1,5 +1,8 @@
-.boxed {
-    width: 200px;
-    height: 300px;
-    border: 1px solid green ;
-  }
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row.display-flex>[class*='col-'] {
+  flex-grow: 1;
+}
