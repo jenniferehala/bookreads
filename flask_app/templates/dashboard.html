@@ -11,7 +11,8 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" src="{{ url_for('static', filename='style.css') }}">
     <!-- Google JS Sign-in -->
-    <meta name="google-signin-client_id" content="321302771227-4fuodheas35g5rsm2hoffvhkl1v4eeg0.apps.googleusercontent.com">
+    <meta name="google-signin-client_id"
+        content="321302771227-4fuodheas35g5rsm2hoffvhkl1v4eeg0.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- API Response -->
     <script src="https://apis.google.com/js/api.js"></script>
@@ -106,7 +107,7 @@
                     <p>
                         <button onclick="authenticate().then(loadClient)">authorize and load</button>
                         <button onclick="execute()">execute</button>
-                        <div id="viewerCanvas" style="width: 600px; height: 500px"></div>
+                    <div id="viewerCanvas" style="width: 600px; height: 500px"></div>
                     </p>
                 </div>
             </div>
@@ -125,36 +126,16 @@
                     <h5>Purchased</h5>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="p-3 border bg-light">
-                    <h5>My eBooks</h5>
-                </div>
-                <br>
-                <div class="p-3 border bg-light">
-                    <h5>Have Read</h5>
-                </div>
-                <br>
-                <div class="p-3 border bg-light">
-                    <h5>Purchased</h5>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="p-3 border bg-light">
-                    <h5>My eBooks</h5>
-                </div>
-                <br>
-                <div class="p-3 border bg-light">
-                    <h5>Have Read</h5>
-                </div>
-                <br>
-                <div class="p-3 border bg-light">
-                    <h5>Purchased</h5>
-                </div>
-            </div>
+
+            <br>
+
+
         </div>
+    </div>
     </div>
     <br><br>
 
-<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
+
 </html>
